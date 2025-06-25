@@ -35,7 +35,7 @@ pytest==8.4.1
 requests==2.32.4
 requests-html==0.10.0
 scikit-learn==1.6.1
-
+cmake==4.0.3
 gTTS==2.5.4
 joblib==1.5.1
 matplotlib==3.10.3
