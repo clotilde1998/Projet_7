@@ -6,8 +6,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import re
 import os
-import pyttsx3
-
 
 # === CHARGEMENT DU MODÈLE & DONNÉES ===
 model = joblib.load('pipeline_complete.pkl')
@@ -31,11 +29,6 @@ data_scaled = data.copy()
 data_train_scaled = data_train.copy()
 
 explainer = shap.TreeExplainer(model['model'])
-
-def speak(text):
-    engine = pyttsx3.init()
-    engine.say(text)
-    engine.runAndWait()
 
 # === INTERFACE UTILISATEUR ===
 st.sidebar.header("Sélection du client")
